@@ -8,6 +8,7 @@
     <link rel="icon" href="./img/logo/favicon.png">
     <link rel="stylesheet" href="./home/css/bootstrap.css">
     <link rel="stylesheet" href="./home/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./home/css/linearicons/Web Font/style.css">
     <link rel="stylesheet" href="./home/css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <title>Post - WorldMix</title>
@@ -26,7 +27,7 @@
           </div>
         <nav class="col-12 col-sm-3 col-lg-2 d-flex justify-content-around justify-content-sm-between mb-3 mb-sm-0 ml-auto menu p-0">
 
-          <a href="#" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
+          <a href="../home/settings" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
         </nav>
       </div>
     </div>
@@ -53,10 +54,10 @@
                 </button>
 
                 <ul class="p-0 mt-4 mt-md-0">
-                  <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-home mr-3"></i>Home</a></li>
-                  <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-shopping-cart mr-3"></i>Buy</a></li>
-                  <li class="nav-item"><a href="../home/post" class="d-block active nav-link p-3 px-md-0 py-md-1"><i class="fa fa-bolt mr-3"></i>Sell</a></li>
-                  <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-gear mr-3"></i>Settings</a></li>
+                    <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-home mr-3"></i>Home</a></li>
+                    <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cart mr-3"></i>Buy</a></li>
+                    <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-store mr-3"></i>Sell</a></li>
+                    <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cog mr-3"></i>Settings</a></li>
                 </ul>
               </div>
             </div>
@@ -140,295 +141,299 @@
                         </div>
                         <div class="tab-pane fade" id="property" role="tabpanel" aria-labelledby="property-tab">
                             <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form-horizontal" method="post">
+                                        <fieldset>
+                                            <!-- Select Basic -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="subcat1">Select Category</label>
+                                                <div class="col-md-12">
+                                                    <select id="subcat1" name="subcat1" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-                                <form class="form-horizontal" method="post">
-                                    <fieldset>
-                                        <!-- Select Basic -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="subcat1">Select Category</label>
-                                            <div class="col-md-12">
-                                                <select id="subcat1" name="subcat1" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
-                                            </div>
-                                        </div>
 
+                                            <div class="form-group">
+                                                <label class="col-md-8" for="name">Display Image</label>
+                                                <div class="col-md-12">
+                                                    <input id="image" name="image" type="file" accept="image/*">
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="name">Name</label>
+                                                <div class="col-md-12">
+                                                    <input id="name" name="name" type="text" placeholder="Display Name" class="form-control input-md">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="bedrooms">No of Bedrooms</label>
+                                                <div class="col-md-9">
+                                                    <input id="bedrooms" name="bedrooms" type="number" class="form-control input-md">
+                                                </div>
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-8" for="name">Display Image</label>
-                                            <div class="col-md-12">
-                                                <input id="image" name="image" type="file" accept="image/*">
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="date">Start Date</label>
+                                                <div class="col-md-9">
+                                                    <input id="date" name="date" type="date" class="form-control input-md">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Text input-->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="name">Name</label>
-                                            <div class="col-md-12">
-                                                <input id="name" name="name" type="text" placeholder="Display Name" class="form-control input-md">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-12 control-label" for="bedrooms">No of Bedrooms</label>
-                                            <div class="col-md-9">
-                                                <input id="bedrooms" name="bedrooms" type="number" class="form-control input-md">
-                                            </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-12 control-label" for="date">Start Date</label>
-                                            <div class="col-md-9">
-                                                <input id="date" name="date" type="date" class="form-control input-md">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="price">Price</label>
+                                                <div class="col-md-4">
+                                                    <input id="price" name="price" type="number" class="form-control input-md">
+                                                </div>
                                             </div>
-                                        </div>
+                                            <!-- Textarea -->
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="address">Address</label>
+                                                <div class="col-md-12">
+                                                    <textarea class="form-control" id="address" name="address">Property address</textarea>
+                                                </div>
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="price">Price</label>
-                                            <div class="col-md-4">
-                                                <input id="price" name="price" type="number" class="form-control input-md">
+                                            <!-- Button (Double) -->
+                                            <div class="form-group">
+                                                <div class="col-md-8">
+                                                    <button id="post" name="post" type="submit" class="btn btn-success">Ok</button>
+                                                    <button id="cancel" name="cancel" type="reset" class="btn btn-danger">Cancel</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Textarea -->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="address">Address</label>
-                                            <div class="col-md-12">
-                                                <textarea class="form-control" id="address" name="address">Property address</textarea>
-                                            </div>
-                                        </div>
 
-                                        <!-- Button (Double) -->
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <button id="post" name="post" type="submit" class="btn btn-success">Ok</button>
-                                                <button id="cancel" name="cancel" type="reset" class="btn btn-danger">Cancel</button>
-                                            </div>
-                                        </div>
-
-                                    </fieldset>
-                                </form>
+                                        </fieldset>
+                                    </form>
+                                </div>
 
                             </div>
                         </div>
                         <div class="tab-pane fade" id="vehicle" role="tabpanel" aria-labelledby="vehicle-tab">
                             <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form-horizontal" method="post">
+                                        <fieldset>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="name">Name</label>
+                                                <div class="col-md-12">
+                                                    <input id="name" name="name" type="text" placeholder="Display Name" class="form-control input-md">
+                                                </div>
+                                            </div>
 
-                                <form class="form-horizontal" method="post">
-                                    <fieldset>
-                                        <!-- Text input-->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="name">Name</label>
-                                            <div class="col-md-12">
-                                                <input id="name" name="name" type="text" placeholder="Display Name" class="form-control input-md">
+                                            <!-- Select Type -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="subcat1">Select Mode of Travel</label>
+                                                <div class="col-md-12">
+                                                    <select id="subcat1" name="subcat1" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Type -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="subcat1">Select Mode of Travel</label>
-                                            <div class="col-md-12">
-                                                <select id="subcat1" name="subcat1" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <!-- Select Type -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="subcat2">Select Type</label>
+                                                <div class="col-md-12">
+                                                    <select id="subcat2" name="subcat2" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Type -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="subcat2">Select Type</label>
-                                            <div class="col-md-12">
-                                                <select id="subcat2" name="subcat2" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <!-- Select Type -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="subcat3">Select Sub Type</label>
+                                                <div class="col-md-12">
+                                                    <select id="subcat3" name="subcat3" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Type -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="subcat3">Select Sub Type</label>
-                                            <div class="col-md-12">
-                                                <select id="subcat3" name="subcat3" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <!-- Select Type -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="brand">Select Brand</label>
+                                                <div class="col-md-12">
+                                                    <select id="brand" name="brand" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Type -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="brand">Select Brand</label>
-                                            <div class="col-md-12">
-                                                <select id="brand" name="brand" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <!-- Select Fuel Type -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="fuel">Select Fuel Type</label>
+                                                <div class="col-md-12">
+                                                    <select id="fuel" name="fuel" class="form-control">
+                                                        <option value="petrol">Petrol</option>
+                                                        <option value="diesel">Diesel</option>
+                                                        <option value="electric">Electric</option>
+                                                        <option value="hybrid">Hybrid</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Fuel Type -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="fuel">Select Fuel Type</label>
-                                            <div class="col-md-12">
-                                                <select id="fuel" name="fuel" class="form-control">
-                                                    <option value="petrol">Petrol</option>
-                                                    <option value="diesel">Diesel</option>
-                                                    <option value="electric">Electric</option>
-                                                    <option value="hybrid">Hybrid</option>
-                                                </select>
+                                            <!-- Select Type -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="transmission">Select Transmission</label>
+                                                <div class="col-md-12">
+                                                    <select id="transmission" name="transmission" class="form-control">
+                                                        <option value="Manual">Manual</option>
+                                                        <option value="Auto">Auto</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Type -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="transmission">Select Transmission</label>
-                                            <div class="col-md-12">
-                                                <select id="transmission" name="transmission" class="form-control">
-                                                    <option value="Manual">Manual</option>
-                                                    <option value="Auto">Auto</option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="town">Select Town</label>
+                                                <div class="col-md-12">
+                                                    <select id="town" name="town" class="form-control">
+                                                        <option value="Manual">Manual</option>
+                                                        <option value="Auto">Auto</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="form-group">
+                                                <label class="col-md-8" for="name">Display Image</label>
+                                                <div class="col-md-12">
+                                                    <input id="image" name="image" type="file" accept="image/*">
+                                                </div>
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="town">Select Town</label>
-                                            <div class="col-md-12">
-                                                <select id="town" name="town" class="form-control">
-                                                    <option value="Manual">Manual</option>
-                                                    <option value="Auto">Auto</option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="price">Price</label>
+                                                <div class="col-md-4">
+                                                    <input id="price" name="price" type="number" class="form-control input-md">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-8" for="name">Display Image</label>
-                                            <div class="col-md-12">
-                                                <input id="image" name="image" type="file" accept="image/*">
+                                            <!-- Textarea -->
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="address">Details</label>
+                                                <div class="col-md-12">
+                                                    <textarea class="form-control" id="address" name="address">Description</textarea>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="price">Price</label>
-                                            <div class="col-md-4">
-                                                <input id="price" name="price" type="number" class="form-control input-md">
+                                            <!-- Button (Double) -->
+                                            <div class="form-group">
+                                                <div class="col-md-8">
+                                                    <button id="post" name="post" type="submit" class="btn btn-success">Ok</button>
+                                                    <button id="cancel" name="cancel" type="reset" class="btn btn-danger">Cancel</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Textarea -->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="address">Details</label>
-                                            <div class="col-md-12">
-                                                <textarea class="form-control" id="address" name="address">Description</textarea>
-                                            </div>
-                                        </div>
 
-                                        <!-- Button (Double) -->
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <button id="post" name="post" type="submit" class="btn btn-success">Ok</button>
-                                                <button id="cancel" name="cancel" type="reset" class="btn btn-danger">Cancel</button>
-                                            </div>
-                                        </div>
-
-                                    </fieldset>
-                                </form>
+                                        </fieldset>
+                                    </form>
+                                </div>
 
                             </div>
                         </div>
                         <div class="tab-pane fade" id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
                             <div class="row">
-                                <form class="form-horizontal" method="post">
-                                    <fieldset>
-                                        <!-- Text input-->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="title">Job Title</label>
-                                            <div class="col-md-12">
-                                                <input id="title" name="title" type="text" placeholder="Job Title" class="form-control input-md">
+                                <div class="col-md-12">
+                                    <form class="form-horizontal" method="post">
+                                        <fieldset>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="title">Job Title</label>
+                                                <div class="col-md-12">
+                                                    <input id="title" name="title" type="text" placeholder="Job Title" class="form-control input-md">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-12 control-label" for="subcat1">Select Job Category</label>
-                                            <div class="col-md-12">
-                                                <select id="subcat1" name="subcat1" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="subcat1">Select Job Category</label>
+                                                <div class="col-md-12">
+                                                    <select id="subcat1" name="subcat1" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Select Basic -->
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="level">Select Job Level</label>
-                                            <div class="col-md-12">
-                                                <select id="level" name="level" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <!-- Select Basic -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="level">Select Job Level</label>
+                                                <div class="col-md-12">
+                                                    <select id="level" name="level" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="subcat1">Select Qualification</label>
-                                            <div class="col-md-12">
-                                                <select id="subcat1" name="subcat1" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="subcat1">Select Qualification</label>
+                                                <div class="col-md-12">
+                                                    <select id="subcat1" name="subcat1" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-12 control-label" for="date">Deadline</label>
-                                            <div class="col-md-9">
-                                                <input id="date" name="date" type="date" class="form-control input-md">
+                                            <div class="form-group">
+                                                <label class="col-md-12 control-label" for="date">Deadline</label>
+                                                <div class="col-md-9">
+                                                    <input id="date" name="date" type="date" class="form-control input-md">
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="country">Select Country</label>
-                                            <div class="col-md-12">
-                                                <select id="country" name="country" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="country">Select Country</label>
+                                                <div class="col-md-12">
+                                                    <select id="country" name="country" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-8 control-label" for="town">Select Town</label>
-                                            <div class="col-md-12">
-                                                <select id="town" name="town" class="form-control">
-                                                    <option value="1">Option one</option>
-                                                    <option value="2">Option two</option>
-                                                    <option value="3">Option three</option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="town">Select Town</label>
+                                                <div class="col-md-12">
+                                                    <select id="town" name="town" class="form-control">
+                                                        <option value="1">Option one</option>
+                                                        <option value="2">Option two</option>
+                                                        <option value="3">Option three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Textarea -->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="details">Details</label>
-                                            <div class="col-md-12">
-                                                <textarea class="form-control" id="details" name="details">Details or Notes</textarea>
+                                            <!-- Textarea -->
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="details">Details</label>
+                                                <div class="col-md-12">
+                                                    <textarea class="form-control" id="details" name="details">Details or Notes</textarea>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Button (Double) -->
-                                        <div class="form-group">
-                                            <div class="col-md-8">
-                                                <button id="post" name="post" type="submit" class="btn btn-success">Ok</button>
-                                                <button id="cancel" name="cancel" type="reset" class="btn btn-danger">Cancel</button>
+                                            <!-- Button (Double) -->
+                                            <div class="form-group">
+                                                <div class="col-md-8">
+                                                    <button id="post" name="post" type="submit" class="btn btn-success">Ok</button>
+                                                    <button id="cancel" name="cancel" type="reset" class="btn btn-danger">Cancel</button>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    </fieldset>
-                                </form>
+                                        </fieldset>
+                                    </form>
+                                </div>
 
                             </div>
                         </div>

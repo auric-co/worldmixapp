@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./home/css/bootstrap.css">
   <link rel="stylesheet" href="./home/css/font-awesome.min.css">
   <link rel="stylesheet" href="./home/css/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="./home/css/linearicons/Web Font/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <title>Settings - WorldMix</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
           </div>
         <nav class="col-12 col-sm-3 col-lg-2 d-flex justify-content-around justify-content-sm-between mb-3 mb-sm-0 ml-auto menu p-0">
 
-          <a href="#" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
+          <a href="../home/settings/" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
         </nav>
       </div>
     </div>
@@ -53,10 +54,10 @@
                 </button>
 
                 <ul class="p-0 mt-4 mt-md-0">
-                  <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-home mr-3"></i>Home</a></li>
-                  <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-shopping-cart mr-3"></i>Buy</a></li>
-                  <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-bolt mr-3"></i>Sell</a></li>
-                  <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-gear mr-3"></i>Settings</a></li>
+                    <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-home mr-3"></i>Home</a></li>
+                    <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cart mr-3"></i>Buy</a></li>
+                    <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-store mr-3"></i>Sell</a></li>
+                    <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cog mr-3"></i>Settings</a></li>
                 </ul>
               </div>
             </div>

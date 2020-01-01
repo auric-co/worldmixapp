@@ -8,6 +8,7 @@
     <link rel="icon" href="./img/logo/favicon.png">
     <link rel="stylesheet" href="./home/css/bootstrap.css">
     <link rel="stylesheet" href="./home/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./home/css/linearicons/Web Font/style.css">
     <link rel="stylesheet" href="./home/css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <title>Find - WorldMix</title>
@@ -26,7 +27,7 @@
           </div>
         <nav class="col-12 col-sm-3 col-lg-2 d-flex justify-content-around justify-content-sm-between mb-3 mb-sm-0 ml-auto menu p-0">
 
-          <a href="#" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
+          <a href="../home/settings" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
         </nav>
       </div>
     </div>
@@ -53,10 +54,10 @@
                 </button>
 
                 <ul class="p-0 mt-4 mt-md-0">
-                  <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-home mr-3"></i>Home</a></li>
-                  <li class="nav-item"><a href="../home/find" class="d-block active nav-link p-3 px-md-0 py-md-1"><i class="fa fa-shopping-cart mr-3"></i>Buy</a></li>
-                  <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-bolt mr-3"></i>Sell</a></li>
-                  <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-gear mr-3"></i>Settings</a></li>
+                    <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-home mr-3"></i>Home</a></li>
+                    <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cart mr-3"></i>Buy</a></li>
+                    <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-store mr-3"></i>Sell</a></li>
+                    <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cog mr-3"></i>Settings</a></li>
                 </ul>
               </div>
             </div>
@@ -73,7 +74,57 @@
                 <div class="col-md-12">
                     <h4>Choose Category</h4>
                     <hr>
+                    <div class="row">
+                        <div class="col">
+                            <a href="./home/find/services">
+                                <div class="card">
+                                    <div class="card-block  text-center">
+                                        <h4 class="card-title"><i class="fa fa-cogs"></i></h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Services</h6>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a href="./home/find/vehicle">
+                                <div class="card">
+                                    <div class="card-block text-center">
+                                        <h4 class="card-title"><i class="lnr lnr-car"></i></h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Vehicle</h6>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="row my-3">
+                        <div class="col">
+                            <a href="./home/find/property">
+                                <div class="card">
+                                    <div class="card-block text-center">
+                                        <h4 class="card-title"><i class="lnr lnr-apartment"></i></h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Accommodation</h6>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a href="./home/find/job/">
+                                <div class="card">
+                                    <div class="card-block text-center">
+                                        <h4 class="card-title"><i class="lnr lnr-briefcase"></i></h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Jobs</h6>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
+
             </div>
           </div>
 

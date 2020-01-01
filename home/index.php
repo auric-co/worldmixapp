@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="./img/logo/favicon.png">
+  <link rel="icon" href="./img/logo/favicon.png">
   <link rel="stylesheet" href="./home/css/bootstrap.css">
   <link rel="stylesheet" href="./home/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./home/css/linearicons/Web Font/style.css">
   <link rel="stylesheet" href="./home/css/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <title>Home - WorldMix</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
           </div>
         <nav class="col-12 col-sm-3 col-lg-2 d-flex justify-content-around justify-content-sm-between mb-3 mb-sm-0 ml-auto menu p-0">
 
-          <a href="#" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
+          <a href="../home/settings" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
         </nav>
       </div>
     </div>
@@ -53,10 +54,10 @@
                 </button>
 
                 <ul class="p-0 mt-4 mt-md-0">
-                  <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-home mr-3"></i>Home</a></li>
-                  <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-shopping-cart mr-3"></i>Buy</a></li>
-                  <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-bolt mr-3"></i>Sell</a></li>
-                  <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="fa fa-gear mr-3"></i>Settings</a></li>
+                  <li class="nav-item"><a href="../home" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-home mr-3"></i>Home</a></li>
+                  <li class="nav-item"><a href="../home/find" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cart mr-3"></i>Buy</a></li>
+                  <li class="nav-item"><a href="../home/post" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-store mr-3"></i>Sell</a></li>
+                  <li class="nav-item"><a href="../home/settings" class="d-block nav-link p-3 px-md-0 py-md-1"><i class="lnr lnr-cog mr-3"></i>Settings</a></li>
                 </ul>
               </div>
             </div>
@@ -86,13 +87,86 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
-                                Matches
+                                <div class="col">
+                                    <a href="./home/matched?category=">
+                                        <div class="card">
+                                            <div class="card-block  text-center">
+                                                <h4 class="card-title"><i class="fa fa-cogs"></i></h4>
+                                                <h6 class="card-subtitle mb-2 text-muted">Services</h6>
+                                                <p>(0)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col">
+                                    <a href="./home/matched?category=">
+                                        <div class="card">
+                                            <div class="card-block text-center">
+                                                <h4 class="card-title"><i class="lnr lnr-car"></i></h4>
+                                                <h6 class="card-subtitle mb-2 text-muted">Vehicle</h6>
+                                                <p>(0)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="./home/matched?category=">
+                                        <div class="card">
+                                            <div class="card-block text-center">
+                                                <h4 class="card-title"><i class="lnr lnr-apartment"></i></h4>
+                                                <h6 class="card-subtitle mb-2 text-muted">Accommodation</h6>
+                                                <p>(0)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col">
+                                    <a href="./home/matched?category=">
+                                        <div class="card">
+                                            <div class="card-block text-center">
+                                                <h4 class="card-title"><i class="lnr lnr-briefcase"></i></h4>
+                                                <h6 class="card-subtitle mb-2 text-muted">Jobs</h6>
+                                                <p>(0)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="listings" role="tabpanel" aria-labelledby="listings-tab">
-                            <div class="row">
-                                Listings
-                            </div>
+                            <ul class="row list-unstyled">
+                                <li class="list-unstyled-item col-md-12 m-2">
+                                    <div class="card">
+                                        <h4 class="card-title">Name</h4>
+                                        <div class="card-footer">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">Category</li>
+                                                <li class="list-inline-item">23/8/2020</li>
+                                                <li class="list-inline-item"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-unstyled-item col-md-12 m-2">
+                                    <div class="card">
+                                        <h4 class="card-title">Name</h4>
+                                        <div class="card-footer">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">Category</li>
+                                                <li class="list-inline-item">23/8/2020</li>
+                                                <li class="list-inline-item"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
