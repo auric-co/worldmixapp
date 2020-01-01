@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row justify-content-start">
         <div class="col-auto hidden-sm-down logo">
-          <a href="#">
+          <a href="./home">
             <img src="../img/logo/logo.png" alt=""><span class="text-white">WorldMix</span>
           </a>
         </div>
@@ -26,7 +26,6 @@
 
           </div>
         <nav class="col-12 col-sm-3 col-lg-2 d-flex justify-content-around justify-content-sm-between mb-3 mb-sm-0 ml-auto menu p-0">
-
           <a href="../home/settings" class="d-inline-block"><img src="../home/img/persona2.jpg" width="22" height="22" class="rounded-circle" alt=""></a>
         </nav>
       </div>
@@ -141,32 +140,108 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="listings" role="tabpanel" aria-labelledby="listings-tab">
-                            <ul class="row list-unstyled">
-                                <li class="list-unstyled-item col-md-12 m-2">
-                                    <div class="card">
-                                        <h4 class="card-title">Name</h4>
-                                        <div class="card-footer">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">Category</li>
-                                                <li class="list-inline-item">23/8/2020</li>
-                                                <li class="list-inline-item"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-unstyled-item col-md-12 m-2">
-                                    <div class="card">
-                                        <h4 class="card-title">Name</h4>
-                                        <div class="card-footer">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">Category</li>
-                                                <li class="list-inline-item">23/8/2020</li>
-                                                <li class="list-inline-item"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="row">
+                                <div class="col-lg-12 mx-auto">
+
+                                    <!-- List group-->
+                                    <ul class="list-group shadow">
+
+                                        <!-- list group item-->
+                                        <li class="list-group-item my-2">
+                                            <!-- Custom content-->
+                                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                                <div class="media-body order-2 order-lg-1">
+                                                    <h5 class="mt-0 font-weight-bold mb-2">Awesome product</h5>
+                                                    <p class="font-italic text-muted mb-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.</p>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <h6 class="font-weight-bold my-2">$120.00</h6>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div><img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                                            </div>
+                                            <!-- End -->
+                                        </li>
+                                        <!-- End -->
+
+                                        <!-- list group item-->
+                                        <li class="list-group-item my-2">
+                                            <!-- Custom content-->
+                                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                                <div class="media-body order-2 order-lg-1">
+                                                    <h5 class="mt-0 font-weight-bold mb-2">Awesome product</h5>
+                                                    <p class="font-italic text-muted mb-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.</p>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <h6 class="font-weight-bold my-2">$99.00</h6>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div><img src="https://res.cloudinary.com/mhmd/image/upload/v1556485077/shoes-3_rk25rt.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                                            </div>
+                                            <!-- End -->
+                                        </li>
+                                        <!-- End -->
+
+                                        <!-- list group item -->
+                                        <li class="list-group-item my-2">
+                                            <!-- Custom content-->
+                                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                                <div class="media-body order-2 order-lg-1">
+                                                    <h5 class="mt-0 font-weight-bold mb-2">Awesome product</h5>
+                                                    <p class="font-italic text-muted mb-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.</p>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <h6 class="font-weight-bold my-2">$140.00</h6>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div><img src="https://res.cloudinary.com/mhmd/image/upload/v1556485078/shoes-2_g4qame.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                                            </div>
+                                            <!-- End -->
+                                        </li>
+                                        <!-- End -->
+
+                                        <!-- list group item -->
+                                        <li class="list-group-item my-2">
+                                            <!-- Custom content-->
+                                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                                <div class="media-body order-2 order-lg-1">
+                                                    <h5 class="mt-0 font-weight-bold mb-2">Awesome product</h5>
+                                                    <p class="font-italic text-muted mb-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.</p>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <h6 class="font-weight-bold my-2">$220.00</h6>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div><img src="https://res.cloudinary.com/mhmd/image/upload/v1556485078/shoes-4_vgfjy9.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                                            </div>
+                                            <!-- End -->
+                                        </li>
+                                        <!-- End -->
+
+                                    </ul>
+                                    <!-- End -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

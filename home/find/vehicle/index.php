@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row justify-content-start">
         <div class="col-auto hidden-sm-down logo">
-          <a href="#">
+          <a href="./home">
             <img src="../img/logo/logo.png" alt=""><span class="text-white">WorldMix</span>
           </a>
         </div>
